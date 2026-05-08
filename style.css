@@ -1,0 +1,51 @@
+:root{
+    /* Backgrounds */
+    --main-bg: #ECECF1;
+    --calculator-bg: #1C1F26;
+    --display-bg: #0F1117;
+
+    /* Buttons */
+    --number-btn: #2C313C;
+    --number-btn-hover: #3A404D;
+
+    --operator-btn: #FF9F0A;
+    --operator-btn-hover: #FFB340;
+
+    --function-btn: #4B5563;
+    --function-btn-hover: #5B6575;
+
+    /* Text */
+    --main-text: #FFFFFF;
+    --secondary-text: #A1A1AA;
+
+    /* Shadows & Borders */
+    --shadow: rgba(0, 0, 0, 0.25);
+    --border-color: rgba(255, 255, 255, 0.05);
+
+}
+
+body{
+    background-color: var(--main-bg);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+article{
+    border: 1px solid red;
+    height: 80vh;
+    width: 50vh;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+#display{
+    background-color: rebeccapurple;
+    width: 100%;
+    border: 1px solid black;
+    height: 20p;
+}
