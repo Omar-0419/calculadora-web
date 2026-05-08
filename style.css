@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root{
     /* Backgrounds */
     --main-bg: #ECECF1;
@@ -21,31 +27,112 @@
     /* Shadows & Borders */
     --shadow: rgba(0, 0, 0, 0.25);
     --border-color: rgba(255, 255, 255, 0.05);
-
 }
 
 body{
+    font-family: Arial, Helvetica, sans-serif;
     background-color: var(--main-bg);
-}
 
-main{
     display: flex;
     justify-content: center;
     align-items: center;
+
     height: 100vh;
 }
 
-article{
-    border: 1px solid red;
-    height: 80vh;
-    width: 50vh;
-    border-radius: 25px;
-    padding: 25px;
+.calculator{
+    background-color: var(--calculator-bg);
+
+    width: 360px;
+
+    padding: 20px;
+
+    border-radius: 30px;
+
+    box-shadow: 0 10px 25px var(--shadow);
 }
 
-#display{
-    background-color: rebeccapurple;
-    width: 100%;
-    border: 1px solid black;
-    height: 20p;
+.display{
+    background-color: var(--display-bg);
+
+    height: 180px;
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.operation{
+    color: var(--secondary-text);
+
+    font-size: 1.5rem;
+
+    margin-bottom: 10px;
+}
+
+.display h1{
+    color: var(--main-text);
+
+    font-size: 5rem;
+
+    font-weight: 300;
+}
+
+.buttons{
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+button{
+    height: 70px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: var(--number-btn);
+
+    color: var(--main-text);
+
+    font-size: 2rem;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover{
+    background-color: var(--number-btn-hover);
+}
+
+.operator{
+    background-color: var(--operator-btn);
+}
+
+.operator:hover{
+    background-color: var(--operator-btn-hover);
+}
+
+.function{
+    background-color: var(--function-btn);
+}
+
+.function:hover{
+    background-color: var(--function-btn-hover);
+}
+
+.zero{
+    grid-column: span 2;
+
+    border-radius: 40px;
 }
