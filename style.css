@@ -71,7 +71,7 @@ body{
     overflow: hidden;
 }
 
-.operation{
+#operation{
     color: var(--secondary-text);
 
     font-size: 1.5rem;
@@ -131,10 +131,4 @@ button:hover{
 
 .function:hover{
     background-color: var(--function-btn-hover);
-}
-
-.zero{
-    grid-column: span 2;
-
-    border-radius: 40px;
 }
